@@ -1,6 +1,58 @@
+@media(max-width: 900px) {
+    body {
+        .top {
+            margin-top: 50px;
+            margin-bottom: 75px;
+        }
+
+        .top__inner {
+            flex-direction: column;
+        }
+
+        .top__title {
+            width: 550px;
+        }
+
+        .top__subtitle {
+            width: 400px;
+        }
+
+        .top__information-link {
+            max-width: 350px;
+            font-size: 18px;
+            letter-spacing: 18px;
+
+        }
+
+        .top__information {
+            margin-top: 30px;
+        }
+
+        .top__information-items {
+            margin-right: 5px;
+        }
+        .about{
+            margin-bottom: 75px;
+        }
+        .about__images{
+            display: none;
+        }
+        .about__box{
+            width: 100%;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .about__text{
+            width: 90%;
+            margin: 20px auto;
+            max-width: 700px;
+        }
+
+    }
+
+}
+
 @media(max-width: 725px) {
-
-
     body {
         .header__inner {
             margin-right: 0px;
@@ -12,7 +64,6 @@
             transform: translateY(-200%);
             flex-direction: column;
             align-items: center;
-            background-color: blue;
             left: 0;
             right: 0;
             transition: all .5s;
@@ -23,15 +74,155 @@
             top: 0;
             left: 0;
         }
+
         .burger__menu {
             display: block;
         }
-    }
-        .bike__slider.show{
+
+        .top.show {
             margin-top: 300px;
             background-color: aqua;
-            
-        }
-    
 
+        }
+
+        .top__inner {
+            margin-bottom: 250px;
+        }
+
+        .top__box {
+            max-width: 100%;
+        }
+
+        .top__title {
+            text-align: center;
+            width: 100%;
+        }
+
+        .top__subtitle {
+            text-align: center;
+            width: 100%;
+        }
+
+        .top__text {
+            text-align: center;
+            width: 100%;
+            margin: 20px auto;
+        }
+        .top__information {
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+
+        .top__information-link {
+            margin-top: 30px;
+        }
+
+        .top__slider {
+            bottom: -251px;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            max-width: 60%;
+        }
+
+        .top__information-items {
+            width: 65%;
+        }
+    }
+
+
+}
+
+@media(max-width: 600px) {
+    body {
+        .header__link-img {
+            width: 140px;
+            height: 80px;
+        }
+
+        .header__menu-link {
+            width: 140px;
+            height: 80px;
+        }
+
+        .header__menu {
+            gap: 15px;
+        }
+
+        .header__menu-item {
+            font-size: 12px;
+        }
+
+        .top.show {
+            margin-top: 200px;
+            background-color: aqua;
+
+        }
+
+        .top__box {
+            margin-bottom: 40px;
+        }
+        .top__information-items {
+            width: 70%;
+        }
+        .top__information-title{
+            font-size: 12px;
+            margin: 10px;
+        }
+    }
+}
+
+@media(max-width: 550px) {
+    body {
+        .top__information-items {
+            width: 80%;
+        }
+
+        .top__box {
+            margin-bottom: 20px;
+        }
+        .top__slider{
+            bottom: -245px;
+        }
+        .top__information-link{
+            margin-top: 40px;
+        }
+
+
+        }
+    }
+
+
+@media(max-width: 450px) {
+    body {
+        .header__menu {
+            margin-top: 70px;
+            gap: 10px;
+        }
+
+        .header__link-img {
+            margin-left: 30px;
+            width: 120px;
+            height: 60px;
+        }
+
+        .burger__menu {
+            margin-right: 30px;
+        }
+
+        .header__menu-link {
+            width: 120px;
+            height: 60px;
+        }
+        .top__slider{
+            bottom: -210px;
+        }
+        .top__subtitle{
+            margin-bottom: 40px;
+        }
+        .top__information-items {
+            width: 85%;
+        }
+
+    }
 }

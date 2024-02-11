@@ -14,6 +14,6 @@ $(document).ready(function () {
   $('.burger__menu').on('click', function () {
     $('.header__menu').toggleClass('show');
     $('.burger__menu').toggleClass('show');
-    $('.bike__slider').toggleClass('show');
+    $('.top').toggleClass('show');
   });
 });
