@@ -16,4 +16,17 @@ $(document).ready(function () {
     $('.burger__menu').toggleClass('show');
     $('.top').toggleClass('show');
   });
+
+  $(window).scroll(function(){
+      if ($(this).scrollTop() > 100) {
+          $('.scrollToTopBtn').addClass('showBtn');
+      } else {
+          $('.scrollToTopBtn').removeClass('showBtn');
+      }
+  });
+  
+  $('.scrollToTopBtn').click(function(){
+      $('html, body').animate({scrollTop : 0},800);
+      return false;
+  });
 });

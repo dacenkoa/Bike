@@ -91,16 +91,16 @@ function styles() {
         .pipe(browserSync.stream());
 }
 
-function oldCss() {
-    return src([
-        'node_modules/normalize.css/normalize.css'
-        // 'node_modules/slick-carousel/slick/slick.css',
-        // 'node_modules/fullpage.js/dist/fullpage.css'
-    ])
-        .pipe(concat('_libs.scss'))
-        .pipe(dest('app/scss'))
-        .pipe(browserSync.stream());
-}
+// function oldCss() {
+//     return src([
+//         'node_modules/normalize.css/normalize.css'
+//         'node_modules/slick-carousel/slick/slick.css',
+//         'node_modules/fullpage.js/dist/fullpage.css'
+//     ])
+//         .pipe(concat('_libs.scss'))
+//         .pipe(dest('app/scss'))
+//         .pipe(browserSync.stream());
+// }
 
 function watching() {
     browserSync.init({
@@ -137,7 +137,7 @@ function building() {
 }
 
 exports.styles = styles;
-exports.oldCss = oldCss;
+// exports.oldCss = oldCss;
 exports.images = images;
 exports.fonts = fonts;
 exports.building = building;
@@ -148,4 +148,4 @@ exports.watching = watching;
 
 
 exports.build = series(cleanDist, building);
-exports.default = parallel(oldCss, styles, images, fonts, scripts, pages, watching);
+exports.default = parallel(styles, images, fonts, scripts, pages, watching);
